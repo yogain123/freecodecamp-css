@@ -267,7 +267,7 @@ grow(0)   shrink(1)   basis
   animation-direction: reverse;
 
   /* Short hand way */
-  animation: red-to-black 4s linear 1 2 reverse;
+  animation: red-to-black 4s linear 1s 2 reverse;
 
   /* Browser Support */
   -webkit-animation: red-to-black 4s linear 1 2 reverse;
