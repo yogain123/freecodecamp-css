@@ -1,0 +1,294 @@
+/* Pseudo Selector Start */
+h2:hover {
+  background: red;
+}
+
+li:first-child {
+  color: steelblue;
+}
+
+li:last-child {
+  color: steelblue;
+}
+
+li:nth-child(2) {
+  color: steelblue;
+}
+
+li:only-child {
+  color: steelblue;
+}
+
+td:only-child {
+  color: steelblue;
+}
+
+a:visited {
+  color: steelblue;
+}
+
+#google-link:link {
+  color: steelblue;
+}
+
+#google-link:visited {
+  color: purple;
+}
+
+/* Pseudo Selector End */
+
+/* Advance Selector Start */
+
+/* All a tag followed by h2 doesn't matter they have same parent or not */
+h2 + a {
+  color: steelblue;
+}
+
+/* All button tag followed by textarea, but both should have same parent */
+textarea ~ button {
+  color: steelblue;
+}
+
+/* All li tag which is immediate or direct inside ul */
+ul > li {
+  color: steelblue;
+}
+
+/* All li tag which is inside or decendent of ul */
+ul li {
+  color: steelblue;
+}
+
+/* Advance Selector End */
+
+/* Attribute Selector Start */
+
+/* h2[attr=value]{
+	color: steelblue;
+} */
+
+h2[class="subtitle"] {
+  color: steelblue;
+}
+
+img[src="../img/"] {
+  color: steelblue;
+}
+
+/* Every single image where src starts with ../im  */
+img[src^="../im"] {
+  color: steelblue;
+}
+
+/* Every single image where src ends with ../im  */
+img[src$="../im"] {
+  color: steelblue;
+}
+
+/* Every single image where src contains ../im  */
+img[src*="../im"] {
+  color: steelblue;
+}
+
+/* Attribute Selector End */
+
+/* The last para value is a=> alpha defines opaciity/tranpirancy range from (0,1) */
+h2 {
+  color: rgb(152, 123, 255);
+  color: rgba(152, 123, 255, 0.3);
+}
+
+body {
+  background-color: red;
+  background: blue;
+  background: url("../images/lol.jpg");
+}
+
+div {
+  height: 400px;
+  width: 70%;
+  background: red;
+
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-size: contain;
+  background-size: 50px 20px;
+
+  background: linear-gradient(to right, red, blue, yellow);
+  background: linear-gradient(to top, red, blue, yellow);
+  background: linear-gradient(to bottom, red, blue, yellow);
+  background: linear-gradient(to left, red, blue, yellow);
+  background: linear-gradient(200deg, red, blue, yellow);
+
+  background: radial-gradient(red, blue, yellow);
+  background: radial-gradient(red 20%, blue 40%, yellow 60%);
+  background: radial-gradient(circle, red, blue, yellow);
+}
+
+#title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  text-align: justify;
+
+  font-size: 1.25em;
+  font-weight: 200;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Padding represents the space between content and border 
+Border is a divider between Padding and Margin , It can be styled using a css property border
+Margin is a space between border and all other content
+*/
+
+#about-us {
+  height: 300px;
+  width: 60%;
+  line-height: 50px;
+
+  border: 3px solid red;
+  border: 3px dashed red;
+
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px;
+}
+
+/* With 'display: inline', the width, height, margin-top, margin-bottom, and float properties have no effect*/
+
+#about-us {
+  float: left;
+  float: right;
+
+  display: block;
+  display: inline;
+  display: inline-block;
+  display: none;
+}
+
+/* FLEX BOX  STARTS */
+
+.container {
+  display: flex;
+
+  flex-direction: row;
+  flex-direction: column;
+
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  justify-content: flex-start;
+  justify-content: flex-end;
+
+  justify-content: space-between;
+  justify-content: space-around;
+
+  align-items: center;
+  align-items: flex-end;
+  align-items: flex-start;
+
+  align-items: baseline;
+  align-items: stretch;
+
+  /* justify-content do things horizontally, and align-items do things from vertically */
+}
+
+.container-item {
+  background: red;
+  height: 30px;
+  width: 30px;
+}
+
+/* In index.html , see class container for manually ordering elements
+
+flex-grow , flex-shrink, flex-basis works horizontally 
+
+grow(0)   shrink(1)   basis
+1           1          30px
+
+*/
+/* FLEX BOX  ENDS */
+
+/* The Transitions */
+
+.submit-button {
+  background: red;
+
+  transition: all 300ms ease-in-out;
+  transition: background 2s ease 1s;
+
+  /* Prefix to support browser versions => chrome, mozilla, opera etx*/
+  -webkit-transition: background 2s ease 1s;
+  -moz-transition: background 2s ease 1s;
+  -o-transition: background 2s ease 1s;
+}
+
+.submit-button:hover {
+  background: steelblue;
+  padding: 10px 10px;
+}
+
+/* Transform Functions */
+
+.submit-button {
+  background: red;
+
+  transition: all 300ms ease-in-out;
+  transition: background 2s ease 1s;
+
+  /* Prefix to support browser versions => chrome, mozilla, opera etx*/
+  -webkit-transition: background 2s ease 1s;
+  -moz-transition: background 2s ease 1s;
+  -o-transition: background 2s ease 1s;
+
+  transform: translate(50px, 50px);
+  transform: scale(2.5);
+  transform: rotate(45deg);
+  transform: skewX(45deg);
+  transform: skewY(45deg);
+}
+
+/* CSS Animations */
+
+.about-me {
+  animation-name: red-to-black;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-direction: reverse;
+
+  /* Short hand way */
+  animation: red-to-black 4s linear 1 2 reverse;
+
+  /* Browser Support */
+  -webkit-animation: red-to-black 4s linear 1 2 reverse;
+  -moz-animation: red-to-black 4s linear 1 2 reverse;
+  -o-animation: red-to-black 4s linear 1 2 reverse;
+  -ms-animation: red-to-black 4s linear 1 2 reverse;
+}
+
+@keyframes red-to-black {
+  0% {
+    background: red;
+    transform: translate(20px, 20px);
+  }
+
+  50% {
+    background: yellow;
+    transform: translate(20px, 20px);
+  }
+
+  100% {
+    background: black;
+    transform: translate(20px, 20px);
+  }
+}
