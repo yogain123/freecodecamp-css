@@ -244,7 +244,7 @@ grow(0)   shrink(1)   basis
   transition: all 300ms ease-in-out;
   transition: background 2s ease 1s;
 
-  /* Prefix to support browser versions => chrome, mozilla, opera etx*/
+  /* Prefix to support browser versions => chrome, mozilla, opera etc */
   -webkit-transition: background 2s ease 1s;
   -moz-transition: background 2s ease 1s;
   -o-transition: background 2s ease 1s;
