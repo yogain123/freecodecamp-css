@@ -307,6 +307,11 @@ p::first-line {
   font-variant: small-caps;
 }
 
+p::selection {
+  color: red;
+  background: yellow;
+}
+
 ::selection {
   color: red;
   background: yellow;
