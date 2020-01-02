@@ -168,6 +168,8 @@ Margin is a space between border and all other content
   display: none;
 }
 
+/* img default display  is inline-block*/
+
 /* FLEX BOX  STARTS */
 
 .container {
@@ -293,11 +295,12 @@ grow(0)   shrink(1)   basis
   }
 }
 
-
-/* Pseudo Elements */
+/* Pseudo Elements 
 selector::pseudo-element {
-  property:value;
+  property: value;
 }
+
+*/
 
 p::first-line {
   color: #ff0000;
@@ -308,3 +311,41 @@ p::first-line {
   color: red;
   background: yellow;
 }
+
+/* Positions */
+
+.parent {
+  position: relative;
+}
+
+.child1 {
+  background: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.child2 {
+  background: yellow;
+  width: 100px;
+  height: 100px;
+}
+
+.child3 {
+  background: blue;
+  height: 100px;
+  height: 100px;
+}
+
+/* - Static
+   - Relative
+   - Absolute
+   - Fixed   
+
+   Static: Static is by default (Original Position),
+   Relative: pushes n pixel to left, right, top or bottom from its original(static) position
+   Absolute: pushes n pixel to left, right, top or bottom from its parent position (need to define position relative to parent)
+   Fixed: pushes n pixel to left, right, top or bottom from border of the page and it is fixed always at that position
+   */
