@@ -361,3 +361,9 @@ p::selection {
    Absolute: pushes n pixel to left, right, top or bottom from its parent position (need to define position relative to parent)
    Fixed: pushes n pixel to left, right, top or bottom from border of the page and it is fixed always at that position
    */
+
+
+/* box sizing */
+.className {
+	box-sizing: border-box;
+}
