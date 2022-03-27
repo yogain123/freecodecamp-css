@@ -361,13 +361,13 @@ p::selection {
    Relative: pushes n pixel to left, right, top or bottom from its original(static) position
 
    Absolute: pushes n pixel to left, right, top or bottom from its parent position (need to define position relative to parent) - or need to define
-       any position apart from "static" to its parent to position relative to its parent, if not then main html is its parent
-       fixed positioned elements are always relative to the document, not any particular parent
-
+             any position apart from "static" to its parent to position relative to its parent, if not then main html is its parent
+       
    Fixed: pushes n pixel to left, right, top or bottom from border of the page and it is fixed always at that position
+          fixed positioned elements are always relative to the document, not any particular parent
 
    Sticky: Its a combination of relative and fixed position - by default it is relative but as soon as its scroll outside of the page
-   it become fixed postion.   
+           it become fixed postion.   
 
    All position remove element from DOM
    */
