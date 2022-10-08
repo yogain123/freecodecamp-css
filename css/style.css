@@ -57,12 +57,12 @@ a:visited {
 
 /* Advance Selector Start */
 
-/* All a tag followed by h2 doesn't matter they have same parent or not */
+/*  "a" sibling immediate followed by h2     */
 h2 + a {
   color: steelblue;
 }
 
-/* All button tag followed by textarea, but both should have same parent */
+/*  any general "button" sibling followed by "textarea"  */
 textarea ~ button {
   color: steelblue;
 }
