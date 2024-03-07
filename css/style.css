@@ -381,7 +381,7 @@ p::selection {
    Sticky: Its a combination of relative and fixed position - by default it is relative but as soon as its scroll outside of the page
            it become fixed postion.   
 
-   All position remove element from DOM
+   Fixed and Absolute remove element from origial DOM and does not follow "Flex" rule if its inside flex container
    */
 
 
